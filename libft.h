@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: welsete <welsete@student.42.fr>            +#+  +:+       +#+        */
+/*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 23:40:13 by welsete           #+#    #+#             */
-/*   Updated: 2025/08/05 23:50:03 by welsete          ###   ########.fr       */
+/*   Updated: 2025/08/26 22:28:57 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,6 @@
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isascii(int c);
+int	ft_isalnum(int c);
 
 #endif

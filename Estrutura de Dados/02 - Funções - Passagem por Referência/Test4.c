@@ -6,28 +6,24 @@
 /*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 20:14:10 by wtavares          #+#    #+#             */
-/*   Updated: 2025/08/28 22:39:37 by wtavares         ###   ########.fr       */
+/*   Updated: 2025/08/28 22:33:03 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	int_soma_sub(int x, int y, int *s)
+void	int_soma_sub(int x, int y, int *soma, int *sub)
 {
-	int	soma;
-
-	soma = x + y;
-	*s = y - x;
-
-	return (soma);
+	*soma = x + y;
+	*sub = x - y;
 }
 
 int	main(void)
 {
-	int	sub;
-	int	c;
+	int	subsbs;
+	int	adicao;
 
-	c = int_soma_sub(10, 20, &sub);
-	printf("\n%d\n%d\n\n", c, sub);
+	int_soma_sub(10, 20, &subsbs, &adicao);
+	printf("\n%d\n%d\n\n", subsbs, adicao);
 	return (0);
 }

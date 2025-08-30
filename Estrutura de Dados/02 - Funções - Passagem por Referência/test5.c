@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test3.c                                            :+:      :+:    :+:   */
+/*   test5.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 20:14:10 by wtavares          #+#    #+#             */
-/*   Updated: 2025/08/29 08:33:47 by wtavares         ###   ########.fr       */
+/*   Created: 2025/08/29 09:18:51 by wtavares          #+#    #+#             */
+/*   Updated: 2025/08/29 09:33:15 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	int_soma_sub(int x, int y, int *s)
+void	func(int *px, int *py)
 {
-	int	soma;
-
-	soma = x + y;
-	*s = y - x;
-	return (soma);
+	px = py;
+	*py = (*py) * (*px);
+	*px = *px + 2;
 }
 
 int	main(void)
 {
-	int	sub;
-	int	c;
+	int	x;
+	int	y;
 
-	c = int_soma_sub(10, 20, &sub);
-	printf("\n%d\n%d\n\n", c, sub);
-	return (0);
+	x = 10;
+	y = 20;
+	func(&x, &y);
+	printf("x = %d, y = %d\n", x, y);
 }

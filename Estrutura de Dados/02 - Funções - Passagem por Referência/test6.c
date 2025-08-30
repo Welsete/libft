@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test3.c                                            :+:      :+:    :+:   */
+/*   test6.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 20:14:10 by wtavares          #+#    #+#             */
-/*   Updated: 2025/08/29 08:33:47 by wtavares         ###   ########.fr       */
+/*   Created: 2025/08/30 00:08:16 by wtavares          #+#    #+#             */
+/*   Updated: 2025/08/30 00:35:57 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	int_soma_sub(int x, int y, int *s)
-{
-	int	soma;
-
-	soma = x + y;
-	*s = y - x;
-	return (soma);
-}
-
 int	main(void)
 {
-	int	sub;
-	int	c;
+	int	i;
+	int	v[5] = {0, 1, 2, 3, 4};
 
-	c = int_soma_sub(10, 20, &sub);
-	printf("\n%d\n%d\n\n", c, sub);
-	return (0);
+	i = 0;
+	while (i < 5)
+	{
+		printf("&v[%d] = %p, v[%d] = %d\n", i, &v[i], i, v[i]);
+		i++;
+	}
+	printf("&v[6] = %p, v[6] = %d\n", &v[6], v[6]);
 }

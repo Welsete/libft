@@ -1,0 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   01 - Malloc e Calloc.c                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/30 00:08:16 by wtavares          #+#    #+#             */
+/*   Updated: 2025/08/31 15:51:50 by wtavares         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+int	main(void)
+{
+	int	i;
+	int	v[5] = {0, 1, 2, 3, 4};
+
+	i = 0;
+	while (i < 5)
+	{
+		printf("&v[%d] = %p, v[%d] = %d\n", i, &v[i], i, v[i]);
+		i++;
+	}
+	printf("&v[6] = %p, v[6] = %d\n", &v[6], v[6]);
+
+	int *a = (int *) malloc(10 * sizeof(int));
+	float *b = (float *) calloc(5, sizeof(float));
+	free(a);
+	free(b);
+}

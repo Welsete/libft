@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/03 12:20:53 by wtavares          #+#    #+#             */
-/*   Updated: 2025/09/03 14:31:40 by wtavares         ###   ########.fr       */
+/*   Created: 2025/09/03 13:30:41 by wtavares          #+#    #+#             */
+/*   Updated: 2025/09/03 14:31:09 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*sc;
 	unsigned char	*dst;
@@ -21,7 +21,17 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		return (NULL);
 	sc = (unsigned char *)src;
 	dst = (unsigned char *)dest;
-	while (n--)
-		*dst++ = *sc++;
+	if (dst > sc)
+	{
+		sc += n - 1;
+		dst += n - 1;
+		while (n--)
+			*dst-- = *sc--;
+	}
+	else
+	{
+		while (n--)
+			*dst++ = *sc++;
+	}
 	return (dest);
 }

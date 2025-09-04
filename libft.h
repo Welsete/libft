@@ -6,7 +6,7 @@
 /*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 23:40:13 by welsete           #+#    #+#             */
-/*   Updated: 2025/09/04 15:22:14 by wtavares         ###   ########.fr       */
+/*   Updated: 2025/09/04 15:48:20 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,13 @@ int		ft_atoi(const char *nptr);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
+char	*ft_itoa(int n);
 char	*ft_strdup(const char *s);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	**ft_split(char const *s, char c);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strnstr(const char *base, const char *find, size_t len);
 

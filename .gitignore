@@ -7,7 +7,6 @@ output
 *.o
 *.a
 a.out
-.gitignore
 
 # Temporários
 *.swp

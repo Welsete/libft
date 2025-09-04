@@ -1,0 +1,11 @@
+# IDE
+.vscode/
+
+# Objetos/bibliotecas
+*.o
+*.a
+a.out
+
+# Temporários
+*.swp
+.DS_Store

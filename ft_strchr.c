@@ -6,7 +6,7 @@
 /*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 22:21:57 by wtavares          #+#    #+#             */
-/*   Updated: 2025/09/03 22:23:39 by wtavares         ###   ########.fr       */
+/*   Updated: 2025/09/03 22:27:16 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strchr(const char *s, int c)
 	const char		*str;
 	unsigned char	cc;
 
-	if (!s)
-		return (NULL);
 	str = s;
 	cc = (unsigned char) c;
 	while (*str)

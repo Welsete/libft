@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/03 22:21:57 by wtavares          #+#    #+#             */
-/*   Updated: 2025/09/03 22:32:53 by wtavares         ###   ########.fr       */
+/*   Created: 2025/09/03 22:42:59 by wtavares          #+#    #+#             */
+/*   Updated: 2025/09/03 22:46:12 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	const char		*str;
 	unsigned char	cc;
+	char			*sop;
+	size_t			i;
 
-	str = s;
-	cc = (unsigned char) c;
-	while (*str)
+	cc = (unsigned char)c;
+	sop = NULL;
+	i = 0;
+	while (s[i])
 	{
-		if (*str == cc)
-			return ((char *) str);
-		str++;
+		if (s[i] == cc)
+			sop = (char *) &s[i];
+		i++;
 	}
-	if (*str == cc)
-		return ((char *) str);
-	return (NULL);
+	if (s[i] == cc)
+		sop = (char *) &s[i];
+	return (sop);
 }

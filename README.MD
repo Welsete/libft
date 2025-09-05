@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Libft" width="20%" height="20%" src="https://github.com/Welsete/libft/blob/main/Badges/libft_b.png" />
+  <img alt="Libft" width="20%" height="20%" src="https://github.com/Welsete/Welsete/blob/main/Badges/libft_b.png" />
 </h1>
 
 > 42 São Paulo – School Project  
@@ -29,7 +29,7 @@ O objetivo é reimplementar funções padrão para entender profundamente seu fu
 O código segue as regras da [Norminette](https://github.com/42School/norminette).
 
 ## Grade
-<img alt="Libft" width="15%" height="15%" src="https://github.com/Welsete/libft/blob/main/Badges/grademe.png" />
+<img alt="Libft" width="15%" height="15%" src="https://github.com/Welsete/Welsete/blob/main/Badges/grademe.png" />
 
 ## Index
 

@@ -22,7 +22,7 @@ This repository contains all archives for the project __libft__ in the __42sp co
 
 ## About
 
-This project is a __C library__ of useful functions that are allowed to be used in future __42 School cursus__ projects. With access to this library, the coding proccess in incoming projects will be more effective. The aim of rewrite this functions is to get a better understanding of them, and get a whide range of utilities for the next projects. [You can find more information in the subject](https://github.com/joaolive/42sp-docs/blob/18eead47a67267cd40bc3dbc6e87900e9e4785a9/ft_printf/en.subject.pdf). As it's specified in the subjet, all the archives are in the same folder.
+This project is a __C library__ of useful functions that are allowed to be used in future __42 School cursus__ projects. With access to this library, the coding proccess in incoming projects will be more effective. The aim of rewrite this functions is to get a better understanding of them, and get a whide range of utilities for the next projects.
 
 The code in this repository follows [the rules of the Norminette](https://github.com/42School/norminette).
 

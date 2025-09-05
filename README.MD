@@ -121,3 +121,50 @@ To use the library functions in your code, simply include this header:
 
 ## Testing
 This library have been tested with [Francinette](https://github.com/xicodomingues/francinette).
+
+## 1. Gere a biblioteca (com bônus)
+
+No diretório da `libft` (onde está o `Makefile`):
+
+```
+make fclean && make bonus
+```
+Isso cria `libft.a` com as funções obrigatórias + bônus.
+
+## 2. Compile o main.c linkando com a lib
+
+Ainda no mesmo diretório (onde estão libft.a, libft.h e main.c):
+
+```
+clang -Wall -Wextra -Werror main.c -L. -lft -I.
+```
+
+`-L.` → procura bibliotecas na pasta atual
+
+`-lft` → linka com libft.a
+
+`-I.` → inclui libft.h da pasta atual
+
+Isso vai gerar um executável `a.out.`
+
+## 3. Execute
+
+```
+./a.out
+```
+
+## 4. (Opcional, recomendado) Rodar com AddressSanitizer
+
+Ajuda a pegar `crash/leak` na hora:
+
+```
+clang -Wall -Wextra -Werror -fsanitize=address -g main.c -L. -lft -I.
+./a.out
+
+```
+
+### 5. (Opcional no Linux) Valgrind para checar vazamentos
+
+```
+valgrind --leak-check=full ./a.out
+```

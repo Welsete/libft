@@ -122,40 +122,40 @@ To use the library functions in your code, simply include this header:
 ## Testing
 This library have been tested with [Francinette](https://github.com/xicodomingues/francinette).
 
-## 1. Gere a biblioteca (com bônus)
+## 1. Build the library (with bonus)
 
-No diretório da `libft` (onde está o `Makefile`):
+In the `libft` directory (where the `Makefile` is located):
 
 ```
 make fclean && make bonus
 ```
-Isso cria `libft.a` com as funções obrigatórias + bônus.
+This creates `libft.a` with both mandatory and bonus functions.
 
-## 2. Compile o main.c linkando com a lib
+## 2. Compile `main.c` linking with the library
 
-Ainda no mesmo diretório (onde estão libft.a, libft.h e main.c):
+Still in the same directory (where `libft.a`, `libft.h` and `main.c` are):
 
 ```
 clang -Wall -Wextra -Werror main.c -L. -lft -I.
 ```
 
-`-L.` → procura bibliotecas na pasta atual
+`-L.` → search for libraries in the current directory
 
-`-lft` → linka com libft.a
+`-lft` → link with `libft.a`  
 
-`-I.` → inclui libft.h da pasta atual
+`-I.` → include `libft.h` from the current directory
 
-Isso vai gerar um executável `a.out.`
+This will generate an executable called `a.out`.
 
-## 3. Execute
+## 3. Run
 
 ```
 ./a.out
 ```
 
-## 4. (Opcional, recomendado) Rodar com AddressSanitizer
+## 4. (Optional, recommended) Run with AddressSanitizer
 
-Ajuda a pegar `crash/leak` na hora:
+Helps detect crashes and memory leaks at runtime:
 
 ```
 clang -Wall -Wextra -Werror -fsanitize=address -g main.c -L. -lft -I.
@@ -163,7 +163,7 @@ clang -Wall -Wextra -Werror -fsanitize=address -g main.c -L. -lft -I.
 
 ```
 
-### 5. (Opcional no Linux) Valgrind para checar vazamentos
+## 5. (Optional on Linux) Use Valgrind to check memory leaks
 
 ```
 valgrind --leak-check=full ./a.out

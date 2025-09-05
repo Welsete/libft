@@ -2,10 +2,9 @@
   <img alt="Libft" width="20%" height="20%" src="https://github.com/Welsete/Welsete/blob/main/Badges/libft_b.png" />
 </h1>
 
-> 42 São Paulo – School Project  
+> 42sp School project
 
-Este repositório contém todos os arquivos do projeto **libft** no **42SP Common Core**.  
-É uma biblioteca personalizada de funções úteis em **C**, incluindo o `Makefile` e o `libft.h`.
+This repository contains all archives for the project __libft__ in the __42sp common core cursus__. It's a custom-made library of useful functions in __C language__. The repository includes the `Makefile` and the `libft.h` library.
 
 <h2 align="center">
 	<a href="#about">About</a>
@@ -23,10 +22,9 @@ Este repositório contém todos os arquivos do projeto **libft** no **42SP Commo
 
 ## About
 
-Este projeto é uma **biblioteca em C** com funções úteis que podem ser reutilizadas em futuros projetos do currículo da **42 School**.  
-O objetivo é reimplementar funções padrão para entender profundamente seu funcionamento, além de construir uma base sólida para projetos seguintes.  
+This project is a __C library__ of useful functions that are allowed to be used in future __42 School cursus__ projects. With access to this library, the coding proccess in incoming projects will be more effective. The aim of rewrite this functions is to get a better understanding of them, and get a whide range of utilities for the next projects. [You can find more information in the subject](https://github.com/joaolive/42sp-docs/blob/18eead47a67267cd40bc3dbc6e87900e9e4785a9/ft_printf/en.subject.pdf). As it's specified in the subjet, all the archives are in the same folder.
 
-O código segue as regras da [Norminette](https://github.com/42School/norminette).
+The code in this repository follows [the rules of the Norminette](https://github.com/42School/norminette).
 
 ## Grade
 <img alt="Libft" width="15%" height="15%" src="https://github.com/Welsete/Welsete/blob/main/Badges/grademe.png" />
@@ -90,10 +88,6 @@ O código segue as regras da [Norminette](https://github.com/42School/norminette
 
 ## Requirements
 The library is written in **C** and requires the `gcc` or `clang` compiler, with the standard headers `<stdlib.h>` and `<unistd.h>`.
-
-
-## Requirements
-A biblioteca é escrita em **C** e precisa do compilador `gcc` ou `clang`, além das bibliotecas padrão `<stdlib.h>` e `<unistd.h>`.
 
 ## Instructions
 

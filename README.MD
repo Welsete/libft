@@ -92,27 +92,31 @@ The library is written in **C** and requires the `gcc` or `clang` compiler, with
 ## Instructions
 
 ### 1. Compiling the library
-To compile the library with the **basic** functions:
-make
 
-To also compile the **bonus** functions:
-make bonus
+To compile the library, go to its path and run:
 
-### 2. Cleaning compiled files
-To remove all generated `.o` files and the `.a` archive:
-make fclean
+For __basic__ functions:
+```
+$ make
+```
 
-### 3. Using the library in your project
-Include the header in your code:
+For __bonus__ functions:
+```
+$ make bonus
+```
+
+### 2. Cleaning all binary (.o) and executable files (.a)
+
+To delete all files generated with make, go to the path and run:
+```
+$ make fclean
+```
+
+### 3. Using it in your code
+
+To use the library functions in your code, simply include this header:
+```
 #include "libft.h"
-
-And link the library when compiling:
-gcc main.c -L. -lft -o my_program
-
-This will:
-- compile your `main.c` file,
-- link it with `libft.a`,
-- and create an executable `my_program`.
 ```
 
 ## Testing

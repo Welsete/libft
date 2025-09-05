@@ -160,7 +160,6 @@ Helps detect crashes and memory leaks at runtime:
 ```
 clang -Wall -Wextra -Werror -fsanitize=address -g main.c -L. -lft -I.
 ./a.out
-
 ```
 
 ## 5. (Optional on Linux) Use Valgrind to check memory leaks

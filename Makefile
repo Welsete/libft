@@ -6,11 +6,11 @@
 #    By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/04 16:24:03 by wtavares          #+#    #+#              #
-#    Updated: 2025/09/04 16:55:30 by wtavares         ###   ########.fr        #
+#    Updated: 2025/09/08 17:37:47 by wtavares         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC      = clang
+CC      = cc
 CFLAGS  = -Wall -Wextra -Werror
 
 AR      = ar

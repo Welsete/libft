@@ -6,7 +6,7 @@
 /*   By: wtavares <wtavares@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/27 22:35:28 by wtavares          #+#    #+#             */
-/*   Updated: 2025/09/04 22:30:36 by wtavares         ###   ########.fr       */
+/*   Updated: 2025/09/08 18:12:54 by wtavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (s[i])
+	while (*(s++) != '\0')
 		i++;
 	return (i);
 }

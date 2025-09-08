@@ -7,6 +7,7 @@ output
 *.o
 *.a
 a.out
+main.c
 
 # Temporários
 *.swp
